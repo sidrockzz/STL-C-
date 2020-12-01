@@ -2,16 +2,13 @@
 
 using namespace std;
 
-template<typename T>
-T pi = T(3.1415926535897932385L);
 
-template<typename T>
-T area_of_circle(const T &r){
-    return r * r * pi<T>;
-}
+#define SQUARE(x) x*x
 
-int main(){
-    cout.precision(20);
-    cout<< pi<long double> <<endl;
-    cout<< area_of_circle<long double>(3)<<endl;
+int main()
+{
+float s=10, u=30, t=2, a;
+a = 2*(s-u*t)/SQUARE(t);
+printf("Result = %f", a);
+return 0;
 }
