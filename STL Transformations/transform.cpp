@@ -22,13 +22,13 @@ void disp_v(vector<T> & v) {
 
 int main()
 {
-    accum<int> x(7);
+    accum<Rational> x(Rational(3,5));
     cout << x(7) << endl;
     
-    vector<int> v1 = { 1, 2, 3, 4, 5};
+    vector<Rational> v1 = { 1, 2, 3, 4, 5};
     disp_v(v1);
     
-    vector<int> v2(v1.size());
+    vector<Rational> v2(v1.size());
     transform(v1.begin(), v1.end(), v2.begin(), x);
 
     disp_v(v2);
