@@ -18,7 +18,7 @@ void message(const char * m, const T & v) { cout << m << ": " << v << endl; }
 
 int main() {
     message("construct set set1");
-    set<string> set1 = { "one", "two", "three", "four", "five" };
+    multiset<string> set1 = { "one", "two", "three", "four", "five" };
     message("size of set", set1.size());
     message("ordered set is alphabetical");
     print_set(set1);
