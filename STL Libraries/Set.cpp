@@ -44,7 +44,7 @@ int main() {
     
     
     message("construct unordered set set1");
-    unordered_set<string> set2 = { "one", "two", "three", "four", "five" };
+    unordered_multiset<string> set2 = { "one", "two", "three", "four", "five" };
     message("size of set", set2.size());
     message("unordered set has no defined order");
     print_set(set2);
