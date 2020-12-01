@@ -26,7 +26,7 @@ void message(const char * m, const T & v) { cout << m << ": " << v << endl; }
 
 int main() {
     message("map of strings from initializer list");
-    map<string, string> mapstr = { { "George", "Father" }, { "Ellen", "Mother" },
+    unordered_map<string, string> mapstr = { { "George", "Father" }, { "Ellen", "Mother" },
         { "Ruth", "Daughter" }, { "Spike", "Neighbor's Son" } };
     
     message("size", mapstr.size());
